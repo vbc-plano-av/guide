@@ -1,0 +1,46 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+
+title = "Village Bible Church — Plano Campus AV Guide"
+theme = "hugo-theme-techdoc"
+
+hasCJKLanguage = true
+metaDataFormat = "yaml"
+defaultContentLanguage = "en"
+enableMissingTranslationPlaceholders = false
+
+[params]
+
+    # Doc repo
+    github_doc_repository = "https://github.com/vbc-plano-av/guide"
+    github_doc_repository_path = "content/"
+
+    # Menu style
+    menu_style = "slide-menu"
+
+    # Date format
+    dateformat = ""
+
+    # Paths excluded from menu
+    menu_exclusion = [
+        "archives"
+    ]
+
+    
+    # Global menu section
+    # [menu]
+    #     [[menu.main]]
+    #         name = "Home"
+    #         url = "/"
+    #         weight = 1
+    #         identifier = "home"
+
+    # Markup configuration
+    [markup]
+        defaultMarkdownHandler = "goldmark"
+        [markup.goldmark.renderer]
+            unsafe = true
+        [markup.tableOfContents]
+            startLevel = 2
+            endLevel = 6
+            ordered = false
